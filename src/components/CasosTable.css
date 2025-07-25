@@ -1,0 +1,183 @@
+/* Responsive: tabla y controles */
+@media (max-width: 900px) {
+  .casos-table th, .casos-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.93rem;
+  }
+  .casos-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .date-selectors, .filters-and-export, .filters {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+  .search-input, .filter-select {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .casos-table {
+    font-size: 0.92rem;
+    overflow-x: auto;
+    display: block;
+  }
+  .casos-table th, .casos-table td {
+    padding: 0.4rem 0.3rem;
+    font-size: 0.91rem;
+  }
+  .casos-controls {
+    gap: 0.7rem;
+  }
+  .export-csv-btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.88rem;
+  }
+}
+/* Casos Table - Diseño moderno y minimalista */
+.casos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: var(--surface);
+  color: var(--text);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+/* Controles organizados */
+.casos-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.date-selectors {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filters-and-export {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-input {
+  min-width: 250px;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: var(--background);
+  color: var(--text);
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: var(--background);
+  color: var(--text);
+  min-width: 160px;
+}
+
+.export-csv-btn {
+  background: var(--secondary);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.export-csv-btn:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(251, 191, 36, 0.25);
+}
+
+.casos-table th, 
+.casos-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.casos-table th {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.casos-table tr:hover {
+  background: var(--background);
+}
+
+.casos-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Botones de tabla minimalistas */
+.table-button {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.18s;
+  margin: 0 0.2rem;
+}
+
+.table-button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.table-button.danger {
+  background: var(--surface);
+  color: var(--danger);
+}
+
+.table-button.danger:hover {
+  background: var(--danger);
+  color: white;
+}
+
+/* Variables CSS para paginación */
+:root {
+  --disabled-bg: #f5f5f5;
+  --disabled-text: #999999;
+}
+
+[data-theme="dark"] {
+  --disabled-bg: #2d3244;
+  --disabled-text: #6b7280;
+}
