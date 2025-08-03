@@ -14,6 +14,7 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
@@ -42,7 +43,9 @@
       "node_modules/**/*"
     ],
     "win": {
-      "target": ["nsis"],
+      "target": [
+        "nsis"
+      ],
       "icon": "public/icon.ico"
     },
     "nsis": {
