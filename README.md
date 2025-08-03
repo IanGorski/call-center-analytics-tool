@@ -1,17 +1,13 @@
+## 🚀 Despliegue Web
 
+[Ver proyecto en vivo - Desplegado en Vercel](https://call-center-analytics-tool-jggz.vercel.app/)
 
 # 📋 Proyecto CAT
 **Sistema de Gestión de Casos y Bajas para Call Center**
 
 ---
 
-
-## 🚀 Despliegue Web
-
-[Ver proyecto en vivo - Desplegado en Vercel](https://call-center-analytics-tool-jggz.vercel.app/)
-
-
-## �📖 Descripción del Proyecto
+## 📖 Descripción del Proyecto
 
 Proyecto CAT es una aplicación de escritorio multiplataforma desarrollada con React, Vite y Electron, diseñada específicamente para optimizar la gestión de casos y bajas en entornos de call center. La aplicación combina una interfaz moderna y minimalista con funcionalidades avanzadas de análisis de datos, ofreciendo una solución completa para el seguimiento y administración de la actividad operativa.
 
